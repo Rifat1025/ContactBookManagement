@@ -5,10 +5,15 @@ def add_contacts(contacts):
     print("\n Add a New Contact:")
     name = input("Name: ")
     email = input("Email: ")
-    phone = input("Phone Number: ")
 
-    # Check for duplicate phone number
-    if any(contact['phone'] == phone for contact in contacts):
+    while True:
+        phone_input = input("Phone Number: ").strip()
+        if phone_input.isdigit():
+            phone = int(phone_input)
+            break
+        else:
+            print("Invalid input. Phone number must contain integer value .Please try again.")
+    if any(str(contact["phone"]) == str(phone) for contact in contacts):
         print("Error: This phone number is already assigned to another contact.")
         return
 
