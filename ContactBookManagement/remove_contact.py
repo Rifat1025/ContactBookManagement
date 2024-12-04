@@ -1,5 +1,5 @@
 import save_contact
-import main
+
 def remove_contacts(contacts):
     query = input("\nEnter the name or phone number of the contact to remove: ").strip().lower()
     for contact in contacts:
