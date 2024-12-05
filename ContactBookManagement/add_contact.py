@@ -13,8 +13,8 @@ def add_contacts(contacts):
             break
         else:
             print("Invalid input. Phone number must contain integer value .Please try again.")
-    if any(str(contact["phone"]) == str(phone) for contact in contacts):
-        print("Error: This phone number is already assigned to another contact.")
+    if phone in [contact['phone'] for contact in contacts]:
+        print("Error: Phone number already exists.")
         return
 
     address = input("Address: ")
