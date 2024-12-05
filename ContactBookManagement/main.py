@@ -8,7 +8,7 @@ import remove_contact
 while True:
 
     contacts=load_contact.load_contacts()
-    print("Library management menu::")
+    print("Book Contact Management menu::")
     print("1.Add_contact")
     print("2.Show the Contact")
     print("3.Search Contact")
