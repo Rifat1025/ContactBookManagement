@@ -15,7 +15,7 @@ while True:
     print("4.Remove_contact")
     print("5.Exit")
 
-    opt=input("Chosse the option 1 to 5 ::\t")
+    opt=input("Chosse the option 1 to 5 ::")
     if opt=="1":
         add_contact.add_contacts(contacts)
     if opt=="2":

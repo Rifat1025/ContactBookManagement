@@ -27,7 +27,7 @@ def add_contacts(contacts):
     }
     contacts.append(new_contact)
 
-    # Save the new contact to the file
+
     with open(data_file, "a") as file:
         writer = csv.DictWriter(file, fieldnames=["name", "email", "phone", "address"])
         writer.writerow(new_contact)
